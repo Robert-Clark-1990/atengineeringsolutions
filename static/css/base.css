@@ -1,3 +1,5 @@
+/* --------------------------------------------------------- Sitewide */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
 }
@@ -12,11 +14,43 @@ p {
 
 .white-text {
     color: white;
+    text-shadow: 2px 2px 5px black;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out; 
+    -moz-transition: all 0.30s ease-in-out;
+    -webkit-transition: all 0.30s ease-in-out;
+}
+
+/* --------------------------------------------------------- Homepage */
 
 #homepage {
-    background: url('/media/plain-bg.png') no-repeat center center fixed;
+    background: url("../images/background.png") no-repeat center center fixed;
     background-size: cover;
+    height: 100vh;
 }
 
+.home {
+    padding-top: 200px !important;
+}
 
+.logo {
+    max-width: 90vw;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* --------------------------------------------------------- Media Queries */
+
+@media (min-width: 675px) {
+    .logo {
+        max-width: 70vw;
+        text-shadow: 2px 2px 5px black;
+    }
+}

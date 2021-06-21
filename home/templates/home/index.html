@@ -3,13 +3,16 @@
 
 {% block content %}
     <section id="homepage">
-        <div class="container h-100">
-            <div class="row h-100">
-                <div class="col-12 logo">
-                    <img src="{{ MEDIA_URL }}at_4.png" alt="AT Logo" class="pt-5 centered">
-                </div>
-                <div class="col-12 mt-3 centered white-text">
-                    <h1>Quality Bespoke Welding and Engineering</h1>
+        <div class="container">
+            <div class="row">
+                <div class="home col-12 my-auto centered pt-5">
+                    <picture class="pt-5 logo centered">
+                        <source media="(min-width: 675px)" srcset="static/images/at_5.png">
+                        <source media="(min-width: 200px)" srcset="static/images/at_6.png">
+                        <img src="static/images/at_6" alt="AT Logo">
+                    </picture>
+                    <h1 class="centered white-text">Quality Bespoke Welding and Engineering</h1>
+                    <p class="centered"><a href="#" class="white-text">Contact us today for a free quote</a></p>
                 </div>
             </div>
         </div>
