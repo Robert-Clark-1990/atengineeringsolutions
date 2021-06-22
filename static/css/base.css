@@ -29,6 +29,18 @@ a:hover {
     -webkit-transition: all 0.30s ease-in-out;
 }
 
+.footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+    line-height: 60px;
+    background-color: antiquewhite;
+}
+
 /* --------------------------------------------------------- Homepage */
 
 #homepage {
@@ -41,9 +53,36 @@ a:hover {
     padding-top: 200px !important;
 }
 
-.logo {
+.logo-bg {
     max-width: 90vw;
     text-shadow: 2px 2px 5px black;
+}
+
+.logo-sm {
+    max-width: 70vw;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* --------------------------------------------------------- About */
+
+#about {
+    background-image: linear-gradient(to bottom right, steelblue, #5d6a8b);
+}
+
+/* --------------------------------------------------------- Work */
+
+#work {
+    background-color: #1c1f2c;
+}
+
+/* --------------------------------------------------------- Reviews */
+
+/* --------------------------------------------------------- Contact */
+
+
+.form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* --------------------------------------------------------- Media Queries */

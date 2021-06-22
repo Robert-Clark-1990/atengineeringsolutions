@@ -6,15 +6,90 @@
         <div class="container">
             <div class="row">
                 <div class="home col-12 my-auto centered pt-5">
-                    <picture class="pt-5 logo centered">
-                        <source media="(min-width: 675px)" srcset="static/images/at_5.png">
-                        <source media="(min-width: 200px)" srcset="static/images/at_6.png">
-                        <img src="static/images/at_6" alt="AT Logo">
+                    <picture>
+                        <source class="pt-5 logo-bg centered" media="(min-width: 675px)" srcset="static/images/at_5.png">
+                        <source class="pt-1 logo-sm centered" media="(min-width: 200px)" srcset="static/images/at_6.png">
+                        <img class="pt-1 logo-sm centered" src="static/images/at_6" alt="AT Logo">
                     </picture>
                     <h1 class="centered white-text">Quality Bespoke Welding and Engineering</h1>
                     <p class="centered"><a href="#" class="white-text">Contact us today for a free quote</a></p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-12 my-auto centered pt-3 pb-3">
+                    <h2>Your vision, your way</h2>
+                    <p>We are AT Engineering Solutions, a bespoke metal work team based in Scarborough, North Yorkshire. With many years of experience in offering high 
+                        quality welding and engineering services, we take on jobs of all sizes and types ensuring your needs are met to the highest of standards.
+                    </p>
+                    <p><a href="#">We are happy to provide a free quote on request. Just give us a call, or use our enquiry form.</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-auto centered pt-3 pb-3">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-auto centered pt-3 pb-3">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row pt-5 pb-5">
+                <div class="col-12 my-auto centered">
+                    <h3>Contact Us</h3>
+                    <p>Please don’t hesitate to contact us for a free quotation.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p><i class="ri-phone-fill"></i> <strong> 07825 178176</strong></p>
+                    <p><i class="ri-mail-fill"></i> <strong>atengineeringsolutions@gmail.com</strong></p>
+                    <p><i class="ri-home-4-fill"></i> <strong>126 Victoria Road, Scarborough, North Yorkshire, YO11 1SL</strong></p>
+                    <p><a href="https://www.facebook.com/atengineeringsolutions/"><i class="ri-facebook-circle-fill"></i> <strong> Find us on Facebook</strong></a></p>
+                    <p><a href="https://www.instagram.com/atengineeringsolutions/"><i class="ri-instagram-fill"></i> <strong> Find us on Instagram</strong></a></p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="password" name="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="number">Telephone Number</label>
+                            <input type="number" name="number" class="form-control" id="number" placeholder="Telephone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Please provide details on your request</label>
+                            <textarea class="form-control" id="details" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
     </section>
 {% endblock %}
