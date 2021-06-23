@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1,
+        "model": "home.reviews",
+        "fields": {
+            "name": "Rob",
+            "review": "Great work from an amazing team. Would highly recommend."
+        }
+    },
+    {
+        "pk": 2,
+        "model": "home.reviews",
+        "fields": {
+            "name": "Tom",
+            "review": "Good stuff from Will."
+        }
+    },
+    {
+        "pk": 3,
+        "model": "home.reviews",
+        "fields": {
+            "name": "Nick",
+            "review": "Well pleased with this work. Would hire again!"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "home.reviews",
+        "fields": {
+            "name": "Joe",
+            "review": "Really happy with the finished product."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "home.reviews",
+        "fields": {
+            "name": "Suzi",
+            "review": "Great work from a great team."
+        }
+    }
+]

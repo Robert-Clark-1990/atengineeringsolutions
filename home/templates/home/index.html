@@ -12,7 +12,7 @@
                         <img class="pt-1 logo-sm centered" src="static/images/at_6" alt="AT Logo">
                     </picture>
                     <h1 class="centered white-text">Quality Bespoke Welding and Engineering</h1>
-                    <p class="centered"><a href="#" class="white-text">Contact us today for a free quote</a></p>
+                    <p class="centered pt-5"><a href="#" class="quote-btn">CONTACT US FOR A FREE QUOTE</a></p>
                 </div>
             </div>
         </div>
@@ -22,11 +22,11 @@
         <div class="container">
             <div class="row pt-5 pb-5">
                 <div class="col-12 my-auto centered pt-3 pb-3">
-                    <h2>Your vision, your way</h2>
+                    <h2>High quality services from expert engineers</h2>
                     <p>We are AT Engineering Solutions, a bespoke metal work team based in Scarborough, North Yorkshire. With many years of experience in offering high 
                         quality welding and engineering services, we take on jobs of all sizes and types ensuring your needs are met to the highest of standards.
                     </p>
-                    <p><a href="#">We are happy to provide a free quote on request. Just give us a call, or use our enquiry form.</a></p>
+                    <p>We are happy to provide a free quote on request. Just give us a call, or <a class="quote-btn" href="#">use our enquiry form.</a></p>
                 </div>
             </div>
         </div>
@@ -44,9 +44,25 @@
 
     <section id="reviews">
         <div class="container">
-            <div class="row">
-                <div class="col-12 my-auto centered pt-3 pb-3">
-
+            <div class="row pt-5 pb-5">
+                <div class="col-12 my-auto centered">
+                    <h3>Customer Reviews</h3>
+                </div>
+                <div class="col-12 my-auto centered">
+                    <div class="slider carousel-items slick-initialized slick-slider slick-dotted" role="toolbar">
+                        <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
+                        <div aria-live="polite" class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 5160px; transform: translate3d(-645px, 0px, 0px);" role="listbox">
+                            {% for review in reviews %}  
+                                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 645px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                                    <h3 class="review">"{{ review.review }}"</h3>
+                                    <h5 class="reviewer">{{ review.name }}</h5>
+                                </div>
+                            {% endfor %}   
+                            </div>
+                        </div>    
+                        <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -59,30 +75,26 @@
                     <h3>Contact Us</h3>
                     <p>Please don’t hesitate to contact us for a free quotation.</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <p><i class="ri-phone-fill"></i> <strong> 07825 178176</strong></p>
-                    <p><i class="ri-mail-fill"></i> <strong>atengineeringsolutions@gmail.com</strong></p>
-                    <p><i class="ri-home-4-fill"></i> <strong>126 Victoria Road, Scarborough, North Yorkshire, YO11 1SL</strong></p>
-                    <p><a href="https://www.facebook.com/atengineeringsolutions/"><i class="ri-facebook-circle-fill"></i> <strong> Find us on Facebook</strong></a></p>
-                    <p><a href="https://www.instagram.com/atengineeringsolutions/"><i class="ri-instagram-fill"></i> <strong> Find us on Instagram</strong></a></p>
+                <div class="col-12 col-md-6 pt-3">
+                    <p><i class="ri-phone-fill"></i> 07825 178176</p>
+                    <p><i class="ri-mail-fill"></i> atengineeringsolutions@gmail.com</p>
+                    <p><i class="ri-home-4-fill"></i> 126 Victoria Road, Scarborough, North Yorkshire, YO11 1SL</p>
+                    <p><a class="black-text" href="https://www.facebook.com/atengineeringsolutions/"><i class="ri-facebook-circle-fill"></i> Find us on Facebook</a></p>
+                    <p><a class="black-text" href="https://www.instagram.com/atengineeringsolutions/"><i class="ri-instagram-fill"></i> Find us on Instagram</a></p>
                 </div>
                 <div class="col-12 col-md-6">
                     <form>
                         <div class="form-group">
-                            <label for="name">Name</label>
                             <input type="password" name="name" class="form-control" id="name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <label for="number">Telephone Number</label>
                             <input type="number" name="number" class="form-control" id="number" placeholder="Telephone Number">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email Address">
                         </div>
                         <div class="form-group">
-                            <label for="details">Please provide details on your request</label>
-                            <textarea class="form-control" id="details" rows="3"></textarea>
+                            <textarea class="form-control" id="details" rows="3" placeholder="Please provide details on your request"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
