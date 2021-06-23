@@ -49,24 +49,19 @@
                     <h3>Customer Reviews</h3>
                 </div>
                 <div class="col-12 my-auto centered">
-                    <div class="slider carousel-items slick-initialized slick-slider slick-dotted" role="toolbar">
-                        <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>
-                        <div aria-live="polite" class="slick-list draggable">
-                            <div class="slick-track" style="opacity: 1; width: 5160px; transform: translate3d(-645px, 0px, 0px);" role="listbox">
-                            {% for review in reviews %}  
-                                <div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 645px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
-                                    <h3 class="review">"{{ review.review }}"</h3>
-                                    <h5 class="reviewer">{{ review.name }}</h5>
-                                </div>
-                            {% endfor %}   
+                    <div class="carousel-items pt-5 pb-5">
+                        {% for review in reviews %}
+                            <div>
+                                <h3 class="review">"{{ review.review }}"</h3>
+                                <h5 class="reviewer">{{ review.name }}</h5>
                             </div>
-                        </div>    
-                        <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section id="contact">
         <div class="container">
