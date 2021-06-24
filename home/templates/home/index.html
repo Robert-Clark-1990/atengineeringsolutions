@@ -5,11 +5,11 @@
     <section id="homepage">
         <div class="container">
             <div class="row">
-                <div class="home col-12 my-auto centered pt-5">
+                <div class="home col-12 my-auto centered">
                     <picture>
-                        <source class="pt-5 logo-bg centered" media="(min-width: 675px)" srcset="static/images/at_5.png">
-                        <source class="pt-1 logo-sm centered" media="(min-width: 200px)" srcset="static/images/at_6.png">
-                        <img class="pt-1 logo-sm centered" src="static/images/at_6" alt="AT Logo">
+                        <source class="logo-bg centered" media="(min-width: 675px)" srcset="static/images/at_5.png">
+                        <source class="logo-sm centered" media="(min-width: 200px)" srcset="static/images/at_6.png">
+                        <img class="logo-sm centered" src="static/images/at_6" alt="AT Logo">
                     </picture>
                     <h1 class="centered white-text">Quality Bespoke Welding and Engineering</h1>
                     <p class="centered pt-5"><a href="#" class="quote-btn">CONTACT US FOR A FREE QUOTE</a></p>
@@ -21,12 +21,18 @@
     <section id="about">
         <div class="container">
             <div class="row pt-5 pb-5">
-                <div class="col-12 my-auto centered pt-3 pb-3">
-                    <h2>High quality services from expert engineers</h2>
+                <div class="col-12 my-auto centered">
+                    <img class="prev-work img-one" src="static/images/01.png" alt="AT work">
+                    <img class="prev-work img-three" src="static/images/03.png" alt="AT work">
+                    <img class="prev-work img-two" src="static/images/02.png" alt="AT work">
+                </div>
+                <div class="col-12 my-auto centered">
+                    <h2 class="subheader pb-5">High quality services from expert engineers</h2>
                     <p>We are AT Engineering Solutions, a bespoke metal work team based in Scarborough, North Yorkshire. With many years of experience in offering high 
                         quality welding and engineering services, we take on jobs of all sizes and types ensuring your needs are met to the highest of standards.
                     </p>
-                    <p>We are happy to provide a free quote on request. Just give us a call, or <a class="quote-btn" href="#">use our enquiry form.</a></p>
+                    <p>We are happy to provide a free quote on request. Just give us a call, or</p>
+                    <p><a class="quote-btn" href="#">use our enquiry form.</a></p>
                 </div>
             </div>
         </div>
@@ -34,9 +40,9 @@
 
     <section id="work">
         <div class="container">
-            <div class="row">
-                <div class="col-12 my-auto centered pt-3 pb-3">
-
+            <div class="row pt-5 pb-5">
+                <div class="col-12 my-auto centered">
+                    <h3 class="white-text subheader">Our Work</h3>
                 </div>
             </div>
         </div>
@@ -46,12 +52,12 @@
         <div class="container">
             <div class="row pt-5 pb-5">
                 <div class="col-12 my-auto centered">
-                    <h3>Customer Reviews</h3>
+                    <h3 class="white-text subheader">Customer Reviews</h3>
                 </div>
                 <div class="col-12 my-auto centered">
                     <div class="carousel-items pt-5 pb-5">
                         {% for review in reviews %}
-                            <div>
+                            <div class="p-3">
                                 <h3 class="review">"{{ review.review }}"</h3>
                                 <h5 class="reviewer">{{ review.name }}</h5>
                             </div>
@@ -66,8 +72,8 @@
     <section id="contact">
         <div class="container">
             <div class="row pt-5 pb-5">
-                <div class="col-12 my-auto centered">
-                    <h3>Contact Us</h3>
+                <div class="col-12 my-auto centered pt-5 pb-5">
+                    <h3 class="subheader">Contact Us</h3>
                     <p>Please don’t hesitate to contact us for a free quotation.</p>
                 </div>
                 <div class="col-12 col-md-6 pt-3">
