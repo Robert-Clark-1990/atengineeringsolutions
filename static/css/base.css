@@ -1,5 +1,10 @@
 /* --------------------------------------------------------- Sitewide */
 
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
 }
@@ -11,6 +16,10 @@ p {
 
 .centered {
     text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .white-text {
@@ -28,10 +37,34 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: rgb(255, 166, 0);
     transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out; 
     -moz-transition: all 0.30s ease-in-out;
     -webkit-transition: all 0.30s ease-in-out;
+}
+
+#topnav {
+    background-color: rgb(34, 40, 126);
+    color: white;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    z-index: 999;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.align-items-right {
+    align-items: flex-end;
 }
 
 .footer {
@@ -43,7 +76,7 @@ a:hover {
     height: 60px;
     z-index: 999;
     line-height: 60px;
-    background-color: whitesmoke;
+    background-color: rgb(34, 40, 126);
 }
 
 .quote-btn {
@@ -94,7 +127,7 @@ a:hover {
 #about {
     background-color: #50b7c7;
     background-image: linear-gradient(19deg, #50b7c7 0%, #DDD6F3 100%);
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
 }
@@ -117,7 +150,7 @@ a:hover {
 
 #work {
     background-color: #1c1f2c;
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
 }
@@ -127,7 +160,7 @@ a:hover {
 #reviews {
     background-color: #435a7d;
     background-image: linear-gradient(135deg, #435a7d 0%, #0c153b 100%);
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
 }
@@ -155,7 +188,7 @@ a:hover {
 
 #contact {
     background-color: whitesmoke;
-    min-height: 70vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
 }
