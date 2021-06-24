@@ -1,5 +1,15 @@
 /* --------------------------------------------------------- Sitewide */
 
+html {
+    min-width: 100% !important;
+    min-height: 100% !important;
+}
+
+body {
+    min-width: 100% !important;
+    min-height: 100% !important;
+}
+
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -35,6 +45,11 @@ a {
     text-decoration: none;
 }
 
+.div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 a:hover {
     text-decoration: none;
     color: rgb(255, 166, 0);
@@ -58,7 +73,7 @@ a:hover {
 .nav-item {
     color: white;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -79,16 +94,26 @@ a:hover {
     background-color: rgb(34, 40, 126);
 }
 
+.main-footer {
+    display: none;
+}
+.mini-footer {
+    display: inline;
+    font-size: 0.8rem;
+}
+
 .quote-btn {
     color: #212529;
     background-color: whitesmoke;
     padding: 10px;
     border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
 }
 
 .quote-btn:hover {
     background-color: rgb(255, 166, 0);
-    color: #212529;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
     transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out; 
     -moz-transition: all 0.30s ease-in-out;
@@ -108,18 +133,17 @@ a:hover {
    
 }
 
+.main-header-text {
+    font-size: 3.5rem;
+}
+
 .home {
-    padding-top: 200px !important;
+    padding-top: 100px !important;
 }
 
-.logo-bg {
-    max-width: 90vw;
-    text-shadow: 2px 2px 5px black;
-}
-
-.logo-sm {
-    max-width: 70vw;
-    text-shadow: 2px 2px 5px black;
+.logo {
+    width: 150px;
+    height: 150px;
 }
 
 /* --------------------------------------------------------- About */
@@ -198,19 +222,44 @@ a:hover {
     padding-bottom: 10px;
 }
 
+.map {
+    width: 250px;
+    height: 250px;
+}
+
 /* --------------------------------------------------------- Media Queries */
 
 @media (min-width: 675px) {
     .logo {
-        max-width: 70vw;
-        text-shadow: 2px 2px 5px black;
+        width: 300px;
+        height: 300px;
     }
-
+    .nav-item {
+        font-size: 1.5rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main-header-text {
+        font-size: 5rem;
+    }
+    .map {
+        width: 300px;
+        height: 300px;
+    }
+    .home {
+        padding-top: 200px !important;
+    }
 }
 
 @media (min-width: 765px) {
     .img-two {
         display: inline;
+    }
+    .main-footer {
+        display: inline;
+    }
+    .mini-footer {
+        display: none;
     }
 }
 
