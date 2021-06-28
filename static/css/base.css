@@ -124,6 +124,12 @@ a:hover {
     font-size: 2.5rem;
 }
 
+.message-col {
+    background-color: rgb(255, 166, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* --------------------------------------------------------- Homepage */
 
 #homepage {
@@ -227,6 +233,15 @@ a:hover {
     height: 250px;
 }
 
+.form-bit {
+    padding-top: 30px;
+}
+
+.form-text {
+    display: inline;
+    font-size: large;
+}
+
 /* --------------------------------------------------------- Media Queries */
 
 @media (min-width: 675px) {
@@ -248,6 +263,13 @@ a:hover {
     }
     .home {
         padding-top: 200px !important;
+    }
+    .form-bit {
+        padding-top: 0;
+    }
+    
+    .form-text {
+        display: none;
     }
 }
 
