@@ -62,7 +62,7 @@ The site is broken down into these key sections:
 
 - Our Work
 
-    Our Work is linked to the AT Engineering Solutions Instagram account. This should update as new images are uploaded to the Instragram account. Another link to the contact form will be here too.
+    Our Work is linked to the AT Engineering Solutions Instagram account. This should update as new images are uploaded to the Instragram account. Another link to the contact form will be here too. Elfsight is used to push Instagram content to the page, and uses the Lite version which limits monthly views to 200.
 
 - Customer Reviews
 
@@ -113,6 +113,10 @@ The site is broken down into these key sections:
 * [Slick Slider](https://kenwheeler.github.io/slick/) 
 
    Slick Slider was used for the carousel effect on the reviews section.
+
+* [Elfsight](https://elfsight.com/)
+
+   Elfsight was used for integrating the Instagram feed.
 
 
 ## Hosting Databases and Version Control
