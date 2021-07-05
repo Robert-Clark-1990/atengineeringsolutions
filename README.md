@@ -118,6 +118,10 @@ The site is broken down into these key sections:
 
    Elfsight was used for integrating the Instagram feed.
 
+* [WhiteNoise](http://whitenoise.evans.io/en/stable/)
+
+   WhiteNoise was used to serve static files.
+
 
 ## Hosting Databases and Version Control
 
@@ -182,3 +186,5 @@ The site is broken down into these key sections:
 - [Slick Slider](https://kenwheeler.github.io/slick/) 
 
 - [Link to get Favicon working](https://www.ordinarycoders.com/blog/article/add-a-custom-favicon-to-your-django-web-app#:~:text=If%20you%20are%20still%20getting,folder%20%3E%20static%20%3E%20img%20folder.)
+
+- [Fade In JS](https://www.dev-tips-and-tricks.com/animate-elements-scrolled-view-vanilla-js)

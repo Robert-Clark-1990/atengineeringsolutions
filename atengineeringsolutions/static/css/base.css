@@ -1,13 +1,13 @@
 /* --------------------------------------------------------- Sitewide */
 
 html {
-    min-width: 100% !important;
-    min-height: 100% !important;
+    width: 100vw !important;
+    height: 100vh !important;
 }
 
 body {
-    min-width: 100% !important;
-    min-height: 100% !important;
+    width: 100vw !important;
+    height: 100vh !important;
 }
 
 .container-fluid {
@@ -59,10 +59,16 @@ a:hover {
     -webkit-transition: all 0.30s ease-in-out;
 }
 
+header.container-fluid.fixed-top {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100vw !important;
+}
+
 #topnav {
     background-color: rgb(34, 40, 126);
     color: white;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     line-height: 60px;
     z-index: 999;
@@ -83,7 +89,7 @@ a:hover {
 }
 
 .footer {
-    width: 100%;
+    width: 100vw;
     height: 60px;
     z-index: 999;
     line-height: 60px;
@@ -93,6 +99,7 @@ a:hover {
 .main-footer {
     display: none;
 }
+
 .mini-footer {
     display: inline;
     font-size: 0.8rem;
@@ -161,13 +168,28 @@ element.style {
     margin-top: 20px!important;
 }
 
+/* Fade in animations for Homepage. Credit to div-tips-and-tricks.com - Link in README */
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+  }
+  
+  .fade-in-element {
+    animation: fade-in 1.4s;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+
 /* --------------------------------------------------------- Homepage */
 
 #homepage {
     background: url("../images/background.png") no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-   
+    width: 100vw;
 }
 
 .main-header-text {
@@ -175,7 +197,12 @@ element.style {
 }
 
 .home {
-    padding-top: 100px !important;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -292,9 +319,7 @@ element.style {
         width: 300px;
         height: 300px;
     }
-    .home {
-        padding-top: 200px !important;
-    }
+
     .form-bit {
         padding-top: 0;
     }
