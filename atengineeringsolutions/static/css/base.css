@@ -38,7 +38,7 @@ p {
 }
 
 .black-text {
-    color: #212529;
+    color: #292d33;
 }
 
 a {
@@ -52,7 +52,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: rgb(255, 166, 0);
+    color: #d4b00d;
     transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out; 
     -moz-transition: all 0.30s ease-in-out;
@@ -66,7 +66,7 @@ header.container-fluid.fixed-top {
 }
 
 #topnav {
-    background-color: rgb(34, 40, 126);
+    background-color: #292d33;
     color: white;
     width: 100vw;
     height: 60px;
@@ -93,7 +93,7 @@ header.container-fluid.fixed-top {
     height: 60px;
     z-index: 999;
     line-height: 60px;
-    background-color: rgb(34, 40, 126);
+    background-color: #292d33;
 }
 
 .main-footer {
@@ -106,7 +106,7 @@ header.container-fluid.fixed-top {
 }
 
 .quote-btn {
-    color: #212529;
+    color: #292d33;
     background-color: whitesmoke;
     padding: 10px;
     border-radius: 5px;
@@ -114,9 +114,9 @@ header.container-fluid.fixed-top {
 }
 
 .quote-btn:hover {
-    background-color: rgb(255, 166, 0);
+    background-color: #d4b00d;
     font-family: 'Bebas Neue', cursive;
-    color: white;
+    color: #292d33;
     transition: all 0.30s ease-in-out;
     -o-transition: all 0.30s ease-in-out; 
     -moz-transition: all 0.30s ease-in-out;
@@ -128,44 +128,9 @@ header.container-fluid.fixed-top {
 }
 
 .message-col {
-    background-color: rgb(255, 166, 0);
+    background-color: #d4b00d;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-a.eapps-link 
-element.style {
-    animation: none!important;
-    background: rgba(255,255,255,.5) url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjIsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2IDUuOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNiA1Ljg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtmaWxsOiM4MDgwODA7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwYXRoIGlkPSJlbGZzaWdodC1nbHlwaC0xMjAwLWEiIGNsYXNzPSJzdDAiIGQ9Ik0zLjIsMEM0LjgsMCw2LjEsMS40LDYsM2MwLDEuNi0xLjQsMi44LTMsMi44cy0yLjgtMS40LTIuOC0zYzAtMC4xLDAtMC4xLDAtMC4yDQoJCWMwLDAsMC4xLTAuMywwLjMtMC4zczAuMywwLjIsMC4zLDAuM3YwLjF2MC4xYzAsMS4zLDEsMi40LDIuMiwyLjRjMS4zLDAsMi40LTEsMi40LTIuMmMwLTEuMy0xLTIuNC0yLjItMi40Yy0wLjEsMC0wLjMsMC0wLjQsMA0KCQlsMCwwYzAsMC0wLjMsMC0wLjQtMC4yUzIuNSwwLDIuNiwwQzIuOCwwLDMsMCwzLjIsMHogTTAuMSwwLjJDMC4yLDAuMiwwLjIsMC4yLDAuMSwwLjJMMC4xLDAuMkwwLjEsMC4ybDMuMSwxLjZsMCwwbDAsMGwwLDBsMCwwDQoJCUMzLjYsMiwzLjcsMi4yLDMuNywyLjVsMCwwbDAsMGwwLDBsMCwwdjAuOWMwLDAuMiwwLDAuMywwLDAuNGwwLDBsMCwwYzAsMC4xLDAsMC4yLTAuMSwwLjJjMCwwLDAsMC0wLjEsMGwwLDBsMCwwTDIuOCwzLjZsMCwwDQoJCUMyLjUsMy40LDIuNCwzLjIsMi40LDIuOWwwLDBjMC0wLjIsMC0wLjUtMC40LTAuOEMxLjMsMS42LDAuMiwwLjYsMCwwLjVsMCwwbDAsMGwwLDBsMCwwVjAuNEMwLDAuMywwLjEsMC4yLDAuMSwwLjJ6Ii8+DQo8L2c+DQo8L3N2Zz4NCg==) no-repeat 8px center/16px 16px;
-    border: none!important;
-    border-radius: 6px!important;
-    bottom: auto!important;
-    box-sizing: border-box!important;
-    color: rgba(0,0,0,.5)!important;
-    display: inline-block!important;
-    float: none!important;
-    font-family: Roboto,Arial,Sans-serif!important;
-    font-size: 12px!important;
-    font-weight: 700!important;
-    height: 28px!important;
-    left: 50%!important;
-    line-height: 16px!important;
-    margin: 8px auto!important;
-    opacity: 1!important;
-    padding: 6px 6px 6px 32px!important;
-    position: relative!important;
-    right: auto!important;
-    text-align: left!important;
-    text-decoration: none!important;
-    text-indent: 0!important;
-    top: auto!important;
-    transform: translateX(-50%)!important;
-    visibility: hidden!important;
-    max-width: 240px!important;
-    z-index: 99999!important;
-    zoom: 1!important;
-    background-color: rgba(238,238,238,0.9)!important;
-    margin-top: 20px!important;
 }
 
 /* Fade in animations for Homepage. Credit to div-tips-and-tricks.com - Link in README */
@@ -213,8 +178,8 @@ element.style {
 /* --------------------------------------------------------- About */
 
 #about {
-    background-color: #50b7c7;
-    background-image: linear-gradient(19deg, #50b7c7 0%, #DDD6F3 100%);
+    background-color: #717385;
+    background-image: linear-gradient(19deg, #717385 0%, #d5d6e2 100%);
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -237,7 +202,7 @@ element.style {
 /* --------------------------------------------------------- Work */
 
 #work {
-    background-color: #1c1f2c;
+    background-color: #545458;
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -246,8 +211,8 @@ element.style {
 /* --------------------------------------------------------- Reviews */
 
 #reviews {
-    background-color: #435a7d;
-    background-image: linear-gradient(135deg, #435a7d 0%, #0c153b 100%);
+    background-color: #2c2c2e;
+    background-image: linear-gradient(135deg, #2c2c2e 0%, #202020 100%);
     min-height: 90vh;
     display: flex;
     align-items: center;
