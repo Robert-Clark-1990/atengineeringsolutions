@@ -244,6 +244,14 @@ header.container-fluid.fixed-top {
     content: none !important;
 }
 
+button.slick-next {
+    display: none !important;
+}
+
+button.slick-prev {
+    display: none !important;
+}
+
 /* --------------------------------------------------------- Contact */
 
 #contact {
