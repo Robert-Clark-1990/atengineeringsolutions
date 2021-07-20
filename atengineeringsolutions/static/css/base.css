@@ -261,6 +261,11 @@ button.slick-prev {
     align-items: center;
 }
 
+.contact-details {
+    align-items: center;
+    text-align: center;
+}
+
 .form-group {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -299,11 +304,13 @@ button.slick-prev {
         width: 300px;
         height: 300px;
     }
-
+    .contact-details {
+        align-items: left;
+        text-align: left;
+    }
     .form-bit {
         padding-top: 0;
     }
-    
     .form-text {
         display: none;
     }
