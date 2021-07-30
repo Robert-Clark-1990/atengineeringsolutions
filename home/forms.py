@@ -13,3 +13,10 @@ class ReviewsForm(forms.ModelForm):
 
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-5'
+
+
+class ContactForm(forms.Form):
+    name = forms.CharField(max_length=100)
+    number = forms.CharField(max_length=50)
+    email = forms.EmailField(max_length=150)
+    message = forms.CharField(widget=forms.Textarea, max_length=3000)
