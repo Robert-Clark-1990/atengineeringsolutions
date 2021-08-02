@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
-from django.http import HttpResponse
 
 from .models import Reviews
 from .forms import ContactForm
@@ -29,12 +28,13 @@ def index(request):
             Message: {}
             '''.format(body['name'], body['number'],
                        body['email'], body['message'])
-            send_mail(subject, message, body['email'],
-                      ['atengineeringsolutions@gmail.com'])
+            send_mail(subject, message, 'atengineeringsolutions@gmail.com',
+                      ['atengineeringsolutions@gmail.com'],
+                      auth_user=None, auth_password=None)
             context = {
-            'name': name,
-        }
-            return render(request, 'home/index.html', context)
+                'name': name,
+            }
+            return redirect('home', context)
 
     form = ContactForm()
     context = {

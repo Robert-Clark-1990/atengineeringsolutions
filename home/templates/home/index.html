@@ -98,32 +98,23 @@
                     <a name='contact'><h3 class="subheader">Contact Us</h3></a>
                     <p>Please don’t hesitate to contact us for a free quotation.</p>
                 </div>
+            </div>
+            <div class="row pb-5">
                 <div class="col-12 col-md-6 pt-3 contact-details">
                     <p><a class="black-text" href="tel:+07825178176"><i class="ri-phone-fill"></i> 07825 178176</a></p>
-                    <p><a class="black-text" href="mailto:atengineeringsolutions@gmail.com?subject=Work Enquiry" subject="Quote"><i class="ri-mail-fill"></i> atengineeringsolutions@gmail.com</a></p>
+                    <p><a class="black-text" href="mailto:atengineeringsolutions@gmail.com?subject=Work%20Enquiry&body=Name:%20%0d%0a%0d%0aTelephone:%20%0d%0a%0d%0aMessage:%20" subject="Quote"><i class="ri-mail-fill"></i> atengineeringsolutions@gmail.com</a></p>
                     <p><a class="black-text" href="https://goo.gl/maps/5DEZDeQVYhi82nZK7" target="_blank"><i class="ri-home-4-fill"></i> 126 Victoria Road, Scarborough, North Yorkshire, YO11 1SL</a></p>
                     <p><a class="black-text" href="https://www.facebook.com/atengineeringsolutions/" target="_blank"><i class="ri-facebook-circle-fill"></i> Visit us on Facebook</a></p>
                     <p><a class="black-text" href="https://www.instagram.com/atengineeringsolutions/" target="_blank"><i class="ri-instagram-fill"></i> Visit us on Instagram</a></p>
                     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.3284627104176!2d-0.4096407844422999!3d54.2804564801854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487f478cd3bb1839%3A0x653a8dd649f3d1bd!2s126%20Victoria%20Rd%2C%20Scarborough%20YO11%201SW!5e0!3m2!1sen!2suk!4v1624546984863!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="col-12 col-md-6 form-bit">
-                    <strong class="form-text black-text">Or use our enquiry form. </strong>
-                    <form action="{% url 'home' %}" method="POST">
-                        {% csrf_token %}
-                            <div class="form-group"> 
-                                <input type="name" name="name" class="form-control" id="name" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="number" name="number" class="form-control" id="number" placeholder="Telephone Number">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email Address">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" type="message" name="message" id="message" rows="5" placeholder="Message"></textarea>
-                            </div>
-                        <button type="submit" class="btn btn-dark">Submit</button>
-                    </form>
+                <div class="col-12 col-md-6 contact-buttons">
+                    <p class="pt-5 pb-5 centered">
+                        <a class="contact-button" href="mailto:atengineeringsolutions@gmail.com?subject=Work%20Enquiry&body=Name:%20%0d%0a%0d%0aTelephone:%20%0d%0a%0d%0aMessage:%20" subject="Quote"><i class="ri-mail-fill"></i> Email Us</a>
+                    </p>
+                    <p class="pt-5 pb-5 centered">
+                        <a class="contact-button" href="tel:+07825178176"><i class="ri-phone-fill"></i> Call Us</a>
+                    </p>
                 </div>
             </div>
             <br>

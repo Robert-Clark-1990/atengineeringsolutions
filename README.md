@@ -173,6 +173,31 @@ The site is broken down into these key sections:
 - There was an issue with the site running on screens less that 575px having a white strip down the righthand side of the screen. This was caused by the reviews carousel blowing out of the container. This was fixed by setting the slick next and before buttons to display: none. 
 
 
+- Contact Form 
+
+I tried to create a contact form for this site, however I couldn't manage to get the gmail account to authorise it, so for now I have removed it and added contact buttons instead. The code for the form is below in case I figure it out down the line and want to reinstate it.
+
+```
+<div class="col-12 col-md-6 form-bit">
+   <strong class="form-text black-text">Or use our enquiry form. </strong>
+      <form action="{% url 'home' %}" method="POST">
+         {% csrf_token %}
+         <div class="form-group"> 
+            <input type="name" name="name" class="form-control" id="name" placeholder="Name">
+         </div>
+         <div class="form-group">
+            <input type="number" name="number" class="form-control" id="number" placeholder="Telephone Number">
+         </div>
+         <div class="form-group">
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email Address">
+         </div>
+         <div class="form-group">
+            <textarea class="form-control" type="message" name="message" id="message" rows="5" placeholder="Message"></textarea>
+         </div>
+         <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+</div>
+```
 ---
 
 # Deployment

@@ -285,6 +285,27 @@ button.slick-prev {
     font-size: large;
 }
 
+.contact-buttons {
+    order: -1!important;
+}
+
+.contact-button {
+    padding: 50px;
+    margin: 20px;
+    background-color: #050505;
+    color: white;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+.contact-button:hover {
+    background-color: #d4b00d;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
 /* --------------------------------------------------------- Media Queries */
 
 @media (min-width: 675px) {
@@ -325,6 +346,9 @@ button.slick-prev {
     }
     .mini-footer {
         display: none;
+    }
+    .contact-buttons {
+        order: 1!important;
     }
 }
 
